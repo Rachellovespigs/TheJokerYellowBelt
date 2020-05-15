@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Joke</title>
+</head>
+<body>
+    <h1 id="Joke">How do pigs write top secret messages?</h1>
+     <button id="toggleShowHide">Show Answer</button>
+
+     <p id="answer" display="none" >With invisible Oink</p>
+     
+     <script>
+        var Joke = document.querySelector("#Joke")
+        var toggleShowHide = document.querySelector("#toggleShowHide")
+        document.body.style.backgroundColor = "pink"
+        document.body.style.textAlign = "center"
+        
+        toggleShowHide.onclick = handleShowHide
+
+        function handleShowHide(){
+
+            if(toggleShowHide.innerHTML==="Show Answer"){
+                toggleShowHide.innerHTML="Hide Answer";
+                answer.style.display = "block";
+            } else {
+                toggleShowHide.innerHTML="Show Answer";
+                answer.style.display = "hidden";
+            }
+
+        }
+
+     </script>
+</body>
+</html>
